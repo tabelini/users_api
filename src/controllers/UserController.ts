@@ -7,7 +7,8 @@ import {Next, Request, Response} from 'restify';
 export class UserController {
     @Get('/')
     public getAllUsers(req: Request, res: Response, next: Next) {
-        res.json({result: 'Hello World!'});
+        let a = 10;
+        res.json({result: `Hello World!`});
         next();
     }
 }
